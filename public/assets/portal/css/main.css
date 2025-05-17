@@ -1,0 +1,216 @@
+@import '../../fonts/fontiran.css';
+@import '../../fonts/css/all.min.css';
+
+
+* {
+    font-family: IRANSansXFaNum;
+    outline: none;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 2em;
+    color: black;
+}
+
+:root {
+    --background: white;
+    --text-primary: black;
+    --text-secondary: royalblue;
+    --accent: purple;
+    --swiper-theme-color: #f21966;
+    --swiper-pagination-color: #f21966;
+    --swiper-theme-color: #f21966;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #eee;
+}
+
+.show-option-user:hover .list-option {
+    display: block;
+}
+
+.chat-box {
+    padding: 30px;
+    position: relative;
+}
+
+.chat-box::after {
+    content: "";
+    background: url('../img/whatsapp.png'), #8c8c8c;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+
+}
+
+.chat-box .part{
+    position: relative;
+    z-index: 5;
+}
+.message-box{
+    position: relative;
+    margin: 15px 0;
+}
+
+.message-box-user::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 9px 0;
+    border-color: transparent #fff transparent transparent;
+    line-height: 0;
+    _border-color: #000 #fff #000 #000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color="#000000");
+}
+.message-box-user{
+    direction: ltr;
+    text-align: right;
+}
+.message-box-user .text{
+    background-color: white;
+    padding: 10px;
+    direction: ltr;
+    text-align: right;
+    direction: ltr;
+    min-width: 120px;
+    max-width: 250px;
+    border-radius: 0 5px 5px 5px;
+}
+
+
+.message-box-self::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 9px 0;
+    border-color: transparent #fff transparent transparent;
+    line-height: 0;
+    _border-color: #000 #fff #000 #000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color="#000000");
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.message-box-self{
+    direction: rtl;
+    text-align: right;
+}
+.message-box-self .text{
+    background-color: white;
+    padding: 10px;
+    direction: ltr;
+    text-align: right;
+    direction: ltr;
+    min-width: 120px;
+    max-width: 250px;
+    border-radius: 5px 0 5px 5px;
+
+}
+
+.chat-box-content::-webkit-scrollbar{
+    width: 1px;
+}
+
+button:disabled{
+    opacity: .5;
+}
+.dropzone {
+    min-height: 150px;
+    border: 2px dashed rgba(0,0,0,.3) !important;
+    background: #e3e3e3 !important;
+    padding: 20px 20px;
+}
+.toast-title{
+    color: white;
+}
+.ajax-upload-dragdrop{
+    text-align: center !important;
+    height: 120px !important;
+    width: 100% !important;
+}
+
+.ajax-file-upload{
+    font-family: IRANSansXFaNum !important;
+    font-size: 12px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: black !important;
+    margin: 33px 0px 0px 0 !important;
+}
+
+.ajax-file-upload-container{
+    display: grid !important;
+    margin: 0 !important;
+}
+.ajax-file-upload-statusbar{
+    margin: 5px 0!important;
+    width: 100% !important;
+    font-size: 11px;
+}
+
+
+#verification_pic .ajax-file-upload{
+    margin-top: 56px !important
+}
+.dropdown-profile::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1e3a8a;
+    left: 6px;
+    top: -3px;
+    transform: rotate(45deg);
+}
+
+.swiper-vip .swiper-pagination {
+    top: 60%;
+}
+
+.swiper-vip .swiper-button-prev {
+    top: 61%;
+    right: 38% !important;
+    left: auto;
+}
+
+.swiper-vip .swiper-button-next {
+    top: 61%;
+    left: 38% !important;
+    right: auto;
+}
+
+.swiper-vip .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 15px;
+    color: #f21966;
+}
+
+@media (max-width: 800px) {
+
+    .swiper-vip .swiper-pagination {
+        top: 55%;
+    }
+
+    .swiper-vip .swiper-button-prev {
+        top: 56%;
+    }
+
+    .swiper-vip .swiper-button-next {
+        top: 56%;
+    }
+}
